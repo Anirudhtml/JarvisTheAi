@@ -1,0 +1,18 @@
+.newChat {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green; /* Optional background color */
+    padding: 5px 10px;
+    border-radius: 5px; 
+    z-index: 1000;
+    color: #99df16;
+    font-size: 13px;
+  }
+
+  .newChat:hover {
+     background-color: #435d0e;
+     cursor: pointer;
+     transition: 0.1s ease-in-out;
+  }

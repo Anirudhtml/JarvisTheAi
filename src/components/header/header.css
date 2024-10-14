@@ -1,0 +1,16 @@
+.userSignUpButton {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.userSignUpButton svg {
+    height: 35px;
+}
+
+.userSignUpButton svg:hover {
+    opacity: 0.6;
+}
+
+.userButton {
+    padding: 10px;
+}

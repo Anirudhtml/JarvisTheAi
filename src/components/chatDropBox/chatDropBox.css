@@ -1,0 +1,50 @@
+.savedChatContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.chatDropBox {
+    display: flex;
+    gap: 10px;
+    color: white;
+    overflow-y: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(152, 152, 152, 0.36);
+    margin: 8px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.chatDropBox:hover {
+    background-color: rgba(132, 132, 132, 0.155);
+}
+
+#subtitle {
+    color: rgba(193, 192, 192, 0.876);
+}
+
+.chatTitle {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.deleteIconContainer {
+    background-color: rgba(0, 0, 0, 0.529);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteIconContainer:hover {
+    background-color: rgba(255, 9, 9, 0.543);
+}

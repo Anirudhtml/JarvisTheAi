@@ -1,0 +1,259 @@
+.App {
+  display: flex;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #14030d,
+    #1c071b,
+    #1a0e2b,
+    #07163d
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.SideBar {
+  width: 260px;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.564);
+}
+
+
+.SideBarContainer.hidden {
+  transform: translateX(-100%);
+  margin-left: -280px;
+}
+
+.chatBox {
+  flex: 1;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.chatBox.expanded {
+  margin-left: -260px;
+}
+
+.SideBarContainer {
+  transform: translateX(0);
+}
+
+.SideBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nameChat {
+  background-color: transparent;
+  border: none;
+  width: 100px;
+}
+
+.nameChat:focus {
+  outline: none;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatSearchBar {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+}
+
+.chatSearchBar:focus {
+  outline: none;
+  color: white;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: #98989857;
+  height: 25px;
+  width: 90%;
+  margin: 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.logo {
+  border-radius: 12px;
+  background-color: rgba(155, 155, 155, 0.345);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.savedChats {
+  border-radius: 12px;
+  background-color: rgba(155, 155, 155, 0.345);
+  width: 100%;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  overflow-y: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.savedChats::-webkit-scrollbar {
+  display: none;
+}
+
+.iconAndName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameChatContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nameChatContainer div svg {
+  cursor: pointer;
+}
+
+.nameChat {
+  color: white;
+}
+
+.gptVersion {
+  background-color: #3e0b4a;
+  border-radius: 8px;
+  height: 20px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #b026ff;
+}
+
+.ChatBoxContainer {
+  height: 400px;
+  width: 550px;
+  background-color: rgba(168, 168, 168, 0.456);
+  border-radius: 15px;
+  display: flex;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.Headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.namePrompt {
+  color: rgba(255, 255, 255, 0.333);
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 5%;
+  width: 350px;
+}
+
+#greeting {
+  color: white;
+  font-size: 30px;
+}
+
+#subline {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.888);
+}
+
+.samplePrompts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.prompt {
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #b026ff;
+  border-radius: 8px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.prompt:hover {
+  background-color: #8b5ba654;
+  cursor: pointer;
+}
+
+.promptSearchContainer {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  color: rgba(0, 0, 0, 0.34);
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 20px;
+  padding: 10px;
+}
+
+
+
+.searchInput {
+  border: none;
+  width: 430px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: transparent;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.sendButton {
+  background-color: #b026ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.sendButton:hover {
+  background-color: #7c27ad;
+  cursor: pointer;
+}
