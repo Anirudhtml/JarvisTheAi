@@ -24,6 +24,7 @@
     overflow-y: auto;
     margin: 0 auto;
     padding: 20px;
+    height: 80vh;
 
     scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none;
