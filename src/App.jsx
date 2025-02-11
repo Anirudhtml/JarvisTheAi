@@ -18,7 +18,7 @@ function App() {
 
   const fetchUserData = async () => {
     try {
-      const response = await fetch("https://jarvisbotai-41a438a5d58f.herokuapp.com/userData", {
+      const response = await fetch("http://3.96.64.168:4000/userData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ function App() {
 
   const saveChat = async () => {
     try {
-      const response = await fetch("https://jarvisbotai-41a438a5d58f.herokuapp.com/save", {
+      const response = await fetch("http://3.96.64.168:4000/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
