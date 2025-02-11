@@ -10,7 +10,7 @@ const sampleData = [
 
 const sendMessageApi = async ({ user, prompt }) => {
   try {
-    const response = await fetch("https://jarvisbotai-41a438a5d58f.herokuapp.com/user/query", {
+    const response = await fetch("http://3.96.64.168:4000/user/query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
