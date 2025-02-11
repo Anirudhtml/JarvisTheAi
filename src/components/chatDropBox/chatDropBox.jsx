@@ -12,7 +12,7 @@ function ChatDropBox({ setRecentChats, user, setSavedChats, savedChat }) {
 
   const hanldeChatDisplay = async (id) => {
     try {
-      const response = await fetch("https://jarvisbotai-41a438a5d58f.herokuapp.com/chat", {
+      const response = await fetch("http://3.96.64.168:4000/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ chatId: id, user }),
@@ -27,7 +27,7 @@ function ChatDropBox({ setRecentChats, user, setSavedChats, savedChat }) {
 
   const handleChatDelete = async (id) => {
     try {
-      const response = await fetch("https://jarvisbotai-41a438a5d58f.herokuapp.com/chat/delete", {
+      const response = await fetch("http://3.96.64.168:4000/chat/delete", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ chatId: id, user }),
